@@ -31,6 +31,27 @@ driver.find_element("xpath", '/html/body/div[1]/section/main/div/div/div/div/but
 #Not Now 2 Button
 driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[3]/button[2]').click()
 
+driver.implicitly_wait(10)
+
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a').click()
+
+driver.implicitly_wait(10)
+
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[1]/div[1]/div/div[3]/button/div').click()
+
+#type name into messenger
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[2]/div[1]/div/div[2]/input').send_keys("itsday_g")
+
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div[1]/div/div[3]/button/div').click()
+
+#Next Button
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[3]/div/button/div').click()
+
+driver.implicitly_wait(10)
+
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea').send_keys('I just texted u off a bot niggggggaaaaaa')
+
+
 #Message Button
 #driver.find_element("xpath", '/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a/svg/button').click()
 
@@ -49,6 +70,5 @@ driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/d
 
 driver.implicitly_wait(10)
 
-driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea').send_keys('I just texted u off a bot niggggggaaaaaa')
 """
 
