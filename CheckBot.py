@@ -49,9 +49,11 @@ driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1
 
 driver.implicitly_wait(10)
 
+#Text
 driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea').send_keys('I just texted u off a bot niggggggaaaaaa')
 
-
+driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
+print("Message successful")
 #Message Button
 #driver.find_element("xpath", '/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a/svg/button').click()
 
