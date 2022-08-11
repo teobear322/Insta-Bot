@@ -14,7 +14,7 @@ my_password = 'Chess101'
 
 wait_time = 10
 
-targets = ['abbyvee_', 'iwillstealyouroreos', 'jordanxalexis2']
+targets = ['lor_bernie', 'jordanxalexis2']
 
 text = "HAHAHAHAHAHAHAH IT REALLY WORKS. You got texted off of a bot made by the glorius Mateo Brown. This is only the first step in my plan. You have been warned by the Loud House. In one month you will learn the true extent of my power"
 
@@ -42,18 +42,24 @@ def message(user):
     driver.implicitly_wait(wait_time)
     #type name into messenger
     driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[2]/div[1]/div/div[2]/input').send_keys(user)
+    driver.implicitly_wait(wait_time)
     #Account Clicker
     driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div[1]/div/div[3]/button/div').click()
+    driver.implicitly_wait(wait_time)
     #Next Button
     driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div[1]/div/div[3]/div/button/div').click()
-    driver.implicitly_wait(wait_time)
 
 def send_message(text):
-    #Text
-    driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea').send_keys(text)
-    #Send
-    driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
-    print("Message successful")
+    try:
+        driver.implicitly_wait(wait_time)
+        #Text
+        driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/textarea').send_keys(text)
+        #Send
+        driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
+        print("Message successful")
+    
+    except Exception as err:
+        print(err)
 
 sign_in(my_username, my_password)
 page_contents()
