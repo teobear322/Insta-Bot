@@ -3,7 +3,6 @@ from selenium.webdriver.common.keys import Keys
 import os
 import time
 
-
 driver = webdriver.Chrome()
 
 url = 'https://www.instagram.com/'
@@ -54,5 +53,6 @@ driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/d
 
 driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
 print("Message successful")
+
 
 
