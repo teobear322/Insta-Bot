@@ -54,23 +54,5 @@ driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/d
 
 driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
 print("Message successful")
-#Message Button
-#driver.find_element("xpath", '/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a/svg/button').click()
 
-"""  
-#Search Button
-driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[2]/input').send_keys("itsday_g")
-
-driver.implicitly_wait(10)
-#ProfileButton
-driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div').click()
-
-driver.implicitly_wait(10)
-
-#message Button
-driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/main/div/header/section/div[3]/div/div[1]/button/div').click()
-
-driver.implicitly_wait(10)
-
-"""
 
