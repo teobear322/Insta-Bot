@@ -16,7 +16,7 @@ wait_time = 10
 
 person = 'Enter Account Name'
 
-text = 'Enter text
+text = 'Enter text'
 
 def sign_in(username, password):
     driver.implicitly_wait(wait_time)
