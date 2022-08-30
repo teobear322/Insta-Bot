@@ -9,12 +9,12 @@ driver = webdriver.Chrome()
 url = 'https://www.instagram.com/'
 driver.get(url)
 
-username = 'teobear322'
-password = 'Chess101'
+my_username = '#Enter Username'
+my_password = '#Enter Password'
 
 wait_time = 10
 
-person = 'miriam.oke'
+person = 'j_isaiah03'
 
 text = 'I just texted u off a bot niggggggaaaaaa'
 
@@ -56,7 +56,7 @@ def send_message(text):
     driver.find_element("xpath", '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/section/div/div[2]/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/button').click()
     print("Message successful")
 
-sign_in('teobear322','Chess101')
+sign_in(my_username,my_password)
 page_contents()
 message_page(person)
 send_message("HAHAHAHAHAHAHAH IT REALLY WORKS. You got texted off of a bot made by the glorius Mateo Brown. This is only the first step in my plan. You have been warned by the Loud House. In one month you will learn the true extent of my power")
