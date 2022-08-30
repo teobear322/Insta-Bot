@@ -11,8 +11,8 @@ driver = webdriver.Chrome()
 url = 'https://www.instagram.com/'
 driver.get(url)
 
-my_username = 'teobear322'
-my_password = 'Chess101'
+my_username = 'Enter username'
+my_password = 'Enter password'
 
 wait_time = 10
 
