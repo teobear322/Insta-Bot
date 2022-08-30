@@ -16,10 +16,9 @@ my_password = 'Enter password'
 
 wait_time = 10
 
-targets = ['lor_bernie', 'jordanxalexis2', 'itsday_g', 'elijahrock','miriam.oke']
+targets = ['Enter multiple account names']
 
-text = "HAHAHAHAHAHAHAH IT REALLY WORKS. You got texted off of a bot made by the glorius Mateo Brown. This is only the first step in my plan. You have been warned by the Loud House. In one month you will learn the true extent of my power"
-
+text = "Enter Message"
 time_between_text = 2
 
 def sign_in(username, password):
