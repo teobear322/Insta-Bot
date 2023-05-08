@@ -8,8 +8,8 @@ driver = webdriver.Chrome()
 url = 'https://www.instagram.com/'
 driver.get(url)
 
-username = 'teobear322'
-password = 'Chess101'
+username = ''
+password = ''
 
 #username
 #xpath - /html/body/div[1]/div/div/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input
